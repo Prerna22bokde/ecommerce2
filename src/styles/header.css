@@ -1,0 +1,372 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* ---header---- */
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  color: rgb(233, 176, 18);
+}
+.Nav {
+  display: grid;
+  grid-template-columns: 1rem 3fr 0.5fr 0rem;
+  background-color: black;
+  color: rgb(233, 176, 18);
+}
+
+.Nav .logo {
+  grid-column: 2/3;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.Nav .logoimg {
+  font-size: 2.5rem;
+}
+
+.nav_list ul {
+  grid-column: 3/4;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 4rem;
+  list-style: none;
+  font-size: 1.2rem;
+}
+
+.Nav ul li {
+  margin: 0 2rem;
+}
+
+.Nav .hamburgmenu {
+  display: none;
+}
+
+/* -----footer------ */
+.footer {
+  background-color: black;
+  color: white;
+  height: 7rem;
+  text-align: center;
+}
+.footer_text {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+.footer_icon {
+  font-size: 3rem;
+  margin: 0.1rem 1rem 0 1rem;
+}
+.footer_icon :hover {
+  color: rgb(233, 176, 18);
+}
+/* ----homepage---- */
+.home {
+  background-image: url("../pages/images/img.jpg");
+  background-position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+.home .home_container {
+  width: auto;
+  margin-left: 3rem;
+}
+.home .home_container h1 {
+  font-size: 4.5rem;
+  font-weight: bold;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.home .home_container p {
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+.home .home_container button {
+  background-color: black;
+  color: white;
+  padding: 0.8rem 2rem;
+  border-radius: 0.4rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  border-style: none;
+}
+.home .home_container button:hover {
+  background-color: #101c1c;
+  color: white;
+}
+/* ---aboutpage--- */
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 7rem 1rem;
+  text-align: center;
+  font-size: 1rem;
+}
+.about h1 {
+  margin: 1rem;
+  font-size: 3rem;
+}
+.about p {
+  text-align: justify;
+}
+
+/* --contactpage--- */
+.contact {
+  margin: 2rem 1rem 1rem 5rem;
+}
+.contact h4 {
+  font-size: 3rem;
+  text-transform: capitalize;
+}
+.contact p {
+  font-size: 1rem;
+  padding: 1rem 0;
+}
+
+.contact table {
+  border-collapse: collapse;
+  width: 40rem;
+  margin: 2rem 0;
+}
+.contact thead {
+  background-color: black;
+  color: white;
+}
+.contact th {
+  font-weight: 400;
+  text-transform: capitalize;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+}
+.contact th,
+td {
+  border: 1px solid black;
+}
+.contact td {
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+#concti1 {
+  color: rgb(129, 5, 63);
+  margin: 0 1rem;
+}
+#concti2 {
+  color: rgb(31, 188, 228);
+  margin: 0 1rem;
+}
+#concti3 {
+  color: rgb(3, 49, 3);
+  margin: 0 1rem;
+}
+
+/* -------menupage----- */
+.card {
+  width: 21rem;
+  height: 24rem;
+  margin: 1rem;
+  background-color: bisque;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 0.5rem;
+}
+.card:hover {
+  margin: -0.5rem;
+}
+.card .price {
+  color: #a11414;
+  padding: 0.5rem 0;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+.card img {
+  width: 21rem;
+  height: 15rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.card .carddis {
+  padding: 0.3rem 0.8rem;
+}
+.card h4 {
+  text-transform: capitalize;
+  font-weight: 600;
+}
+.card p {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.maincard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
+  gap: 1rem;
+  margin: 1rem 0.5rem 2rem 3rem;
+}
+
+/* ----media query---- */
+/* Small devices (portrait tablets and large phones, 500px and down) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .home {
+    justify-content: center;
+    align-items: center;
+    background-position: bottom;
+  }
+  .home .home_container {
+    width: 21rem;
+    height: 12rem;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0rem;
+    border-radius: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .home .home_container h1 {
+    font-size: 2rem;
+  }
+  .home .home_container p {
+    font-weight: 400;
+    font-size: 2rem;
+  }
+  .home .home_container button {
+    background-color: white;
+    color: black;
+    padding: 0.7rem 2rem;
+    font-weight: 700;
+    margin: 1rem;
+    cursor: pointer;
+  }
+  .home .home_container button:hover {
+    background-color: #101c1c;
+    color: white;
+  }
+  /* ---about-- */
+  .about {
+    margin-top: 0;
+  }
+  .about h1 {
+    margin: 1.5rem;
+    font-size: 2rem;
+  }
+  /* -----contact--- */
+  .contact table {
+    width: 20rem;
+  }
+  .contact {
+    margin: 2rem 1rem 1rem 2rem;
+  }
+  /* ---menu--- */
+  .maincard {
+    margin: 1rem 0 2rem 5rem;
+  }
+}
+
+/* Medium devices (landscape tablets, 499px and down) */
+@media only screen and (max-width: 499px) {
+  /* ---menu--- */
+  .maincard {
+    margin: 1rem 0 2rem 0.5rem;
+  }
+  .card:hover {
+    margin: 0rem;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and down) */
+@media only screen and (max-width: 768px) {
+  /* .maincard {
+    margin: 1rem 2rem 2rem 1rem;
+  } */
+}
+
+/* Large devices (laptops/desktops, 992px and down) */
+@media only screen and (max-width: 992px) {
+  .nav_list {
+    display: none;
+  }
+  .Nav .hamburgmenu {
+    display: block;
+    font-size: 2.5rem;
+  }
+  .mobile_navlist {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: fixed;
+    top: 4rem;
+    right: 0rem;
+    width: 20rem;
+    height: 100vh;
+    background-color: #101c1c;
+    box-shadow: 0 4rem 6rem black;
+    padding: 4rem 0 0 1rem;
+    list-style: none;
+    font-size: 1.2rem;
+  }
+  .Nav ul li {
+    margin: 0 0rem;
+  }
+
+  .mobile_navlist ul {
+    height: 20rem;
+    display: flex;
+    /* justify-content: space-around; */
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/* Extra large devices (large laptops and desktops, 280px and down) */
+@media only screen and (max-width: 280px) {
+  .Nav {
+    grid-template-columns: 0.2rem 2fr 0.5fr 0rem;
+  }
+  .Nav .logo {
+    padding: 0.2rem;
+  }
+  .Nav .logoimg {
+    font-size: 1.5rem;
+  }
+  .logo h1 {
+    font-size: 1.5rem;
+  }
+  .Nav .hamburgmenu {
+    display: block;
+    font-size: 2rem;
+  }
+  .card {
+    width: 15rem;
+    height: 18rem;
+  }
+  .card img {
+    width: 15rem;
+    height: 10rem;
+  }
+  .card h4 {
+    font-size: 1.5rem;
+  }
+  .card p {
+    font-size: 0.7rem;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and down) */
+@media only screen and (max-width: 1200px) {
+}
